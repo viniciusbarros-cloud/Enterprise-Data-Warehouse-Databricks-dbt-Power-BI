@@ -15,7 +15,7 @@ O fluxo foi construído aplicando as melhores práticas de Engenharia de Dados, 
 
 ## 🏗️ Arquitetura de Dados (Medallion Architecture)
 
-O fluxo de dados foi desenhado utilizando a **Arquitetura Medalhão**, estruturando o Data Lakehouse em três camadas progressivas de qualidade técnica e regras de negócio:
+O fluxo de dados foi desenhado utilizando a **Arquitetura Medalhão**, estruturando o Data Warehouse em três camadas progressivas de qualidade técnica e regras de negócio:
 
 * **🥉 Camada Bronze (Raw):** Ingestão de dados brutos e históricos, mantendo o estado original das fontes para garantir a linhagem e auditoria.
 * **🥈 Camada Silver (Cleansed):** Aplicação de processos de **ELT**, limpeza, padronização, tipagem de dados e normalização das entidades principais (clientes, agências, transações).
