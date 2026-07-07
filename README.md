@@ -18,8 +18,9 @@ O fluxo foi construído aplicando as melhores práticas de Engenharia de Dados, 
 O fluxo de dados foi desenhado utilizando a **Arquitetura Medalhão**, estruturando o Data Warehouse em três camadas progressivas de qualidade técnica e regras de negócio:
 
 * **🥉 Camada Bronze (Raw):** Ingestão de dados brutos e históricos, mantendo o estado original das fontes para garantir a linhagem e auditoria.
-* **🥈 Camada Silver (Cleansed):** Aplicação de processos de **ELT**, limpeza, padronização, tipagem de dados e normalização das entidades principais (clientes, agências, transações).
-* **🥇 Camada Gold (Curated):** Agregações voltadas para o negócio, prontas para consumo por ferramentas de Analytics.
+*  **🥈 Camada prata (Staging):** Primeira camada dbt. Aplicação de boas práticas de engenharia de software (DataOps). Aplicação de processos de **ELT**, limpeza, padronização, tipagem de dados e normalização das entidades principais (clientes, agências, transações)
+* **🥈 Camada Intermediária (Intermediate):** Cruzamento e preparo dos dados, bem como, das entidades para o modelo final com foco na análise com aplicação das regras de negócio.
+* **🥇 Camada Gold (Marts):** Agregações voltadas para o negócio, prontas para consumo por ferramentas de Analytics.
 
 > **Visualização da Arquitetura:**
 > 
