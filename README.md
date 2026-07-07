@@ -24,9 +24,9 @@ O fluxo de dados foi desenhado utilizando a **Arquitetura Medalhão**, estrutura
 > **Visualização da Arquitetura:**
 > 
 > <picture>
->   <source media="(prefers-color-scheme: dark)" srcset="img/banvic_Medallion_Arquiteture_dark.svg">
->   <source media="(prefers-color-scheme: light)" srcset="img/banvic_Medallion_Arquiteture_definitive.svg">
->   <img alt="Arquitetura Medalhão Banvic" src="img/banvic_Medallion_Arquiteture_white.svg" width="800">
+>   <source media="(prefers-color-scheme: dark)" srcset="banvic_Medallion_Arquiteture_white.svg">
+>   <source media="(prefers-color-scheme: light)" srcset="banvic_Medallion_Arquiteture_definitive_dark">
+>   <img alt="Arquitetura Medalhão Banvic" src="img/banvic_Medallion_Arquiteture_dark.svg" width="800">
 > </picture>
 
 ---
@@ -43,9 +43,9 @@ O modelo **Star Schema** implementado contém:
 > **Diagrama do Data Mart:**
 >
 > <picture>
->   <source media="(prefers-color-scheme: dark)" srcset="img/data_mart_model_dark.drawio.svg">
->   <source media="(prefers-color-scheme: light)" srcset="img/data_mart_model.drawio_white.svg">
->   <img alt="Star Schema Banvic" src="img/data_mart_model.drawio_white.svg" width="800">
+>   <source media="(prefers-color-scheme: dark)" srcset="data_mart_model.drawio_white.svg">
+>   <source media="(prefers-color-scheme: light)" srcset="data_mart_model_dark.drawio.svg">
+>   <img alt="Star Schema Banvic" src="data_mart_model.drawio_white.svg" width="800">
 > </picture>
 
 ---
@@ -69,21 +69,48 @@ Através deste painel desenvolvido sobre as tabelas da camada Gold, os gestores 
 
 ## 📂 Estrutura do Repositório
 
-\`\`\`text
-📦 banvic-analytics
- ┣ 📂 dags/               # Scripts de orquestração de pipelines (ex: Apache Airflow)
- ┣ 📂 docs/               # Documentação técnica e arquivos editáveis (.drawio)
- ┣ 📂 img/                # Imagens exportadas (SVG/PNG) para documentação
- ┣ 📂 models/             # Modelos de transformação SQL do dbt
- ┃ ┣ 📂 bronze/           # Modelos de ingestão bruta
- ┃ ┣ 📂 silver/           # Modelos de limpeza e padronização
- ┃ ┗ 📂 gold/             # Modelos de negócio e Data Marts (Star Schema)
- ┣ 📜 .gitignore          # Regras de exclusão de arquivos no Git
- ┣ 📜 dashboard_banvic.png # Dashboard executivo de Analytics
- ┣ 📜 dbt_project.yml     # Arquivo de configuração principal do projeto dbt
- ┗ 📜 README.md           # Apresentação do projeto (este arquivo)
-\`\`\`
-
+```text
+📦 Enterprise-Data-Warehouse-Databricks-dbt-Power-BI
+┣📂 dashboard
+┃ ┣ 📜 Transações - Geral.svg
+┃ ┗ 📜 Transações - Tipo de Transação.svg
+┣ 📂 macros
+┃ ┣ 📜 generate_schema_name.sql
+┃ ┗ 📜 readme
+┣ 📂 models
+┃ ┣ 📂 intermediate
+┃ ┣ 📂 marts
+┃ ┣ 📂 staging
+┃ ┗ 📜 readme
+┣ 📂 seeds
+┃ ┣ 📜 _seed_schema.yml
+┃ ┣ 📜 agencias.csv
+┃ ┣ 📜 clientes.csv
+┃ ┣ 📜 colaborador_agencia.csv
+┃ ┣ 📜 colaboradores.csv
+┃ ┣ 📜 contas.csv
+┃ ┣ 📜 localidades.csv
+┃ ┣ 📜 propostas_credito.csv
+┃ ┣ 📜 readme
+┃ ┗ 📜 transacoes.csv
+┣ 📂 tests
+┣ 📜 .gitignore
+┣ 📜 README.md
+┣ 📜 arquitetura_banvic_Medallion_Arquiteture_dark.drawio
+┣ 📜 arquitetura_banvic_Medallion_Arquiteture_definitive.drawio
+┣ 📜 banvic_Medallion_Arquiteture_dark.svg
+┣ 📜 banvic_Medallion_Arquiteture_white.svg
+┣ 📜 dashboard_banvic.png
+┣ 📜 dashboard_banvic_fae.pbix
+┣ 📜 data_flow.drawio
+┣ 📜 data_flow.png
+┣ 📜 data_mart_model.drawio
+┣ 📜 data_mart_model.drawio_white.svg
+┣ 📜 data_mart_model_dark.drawio
+┣ 📜 data_mart_model_dark.drawio.svg
+┣ 📜 dbt_project.yml
+┣ 📜 funcoes_dax_part_I.pdf
+┗ 📜 funcoes_dax_part_II.pdf
 ---
 
 ## 🚀 Como Executar o Projeto
