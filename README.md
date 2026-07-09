@@ -46,7 +46,7 @@ O modelo **Star Schema** implementado contém:
 > <picture>
 >   <source media="(prefers-color-scheme: dark)" srcset="data_mart_model.drawio_white.svg">
 >   <source media="(prefers-color-scheme: light)" srcset="data_mart_model_dark.drawio.svg">
->   <img alt="Star Schema Banvic" src="data_mart_model.drawio_white.svg" width="800">
+>   <img alt="Star Schema Banvic" src="data_mart_model.drawio_dark.svg" width="800">
 > </picture>
 
 ---
