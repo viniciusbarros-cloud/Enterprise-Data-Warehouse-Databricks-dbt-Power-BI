@@ -26,7 +26,7 @@ O fluxo de dados foi desenhado utilizando a **Arquitetura Medalhão**, estrutura
 > 
 > <picture>
 >   <source media="(prefers-color-scheme: dark)" srcset="arquitetura_banvic_Medallion_Arquiteture_definitive.png">
->   <source media="(prefers-color-scheme: light)" srcset="arquitetura_banvic_Medallion_Arquiteture_dark.png">
+>   <source media="(prefers-color-scheme: light)" srcset="arquitetura_banvic_Medallion_Arquiteture_definitive.png">
 >   <img alt="Arquitetura Medalhão Banvic" src="img/banvic_Medallion_Arquiteture_definitive.svg" width="800">
 > </picture>
 
@@ -45,8 +45,8 @@ O modelo **Star Schema** implementado contém:
 >
 > <picture>
 >   <source media="(prefers-color-scheme: dark)" srcset="data_mart_model_white.png">
->   <source media="(prefers-color-scheme: light)" srcset="data_mart_model_dark.drawio.png">
->   <img alt="Star Schema Banvic" src="data_mart_model.drawio_dark.svg" width="800">
+>   <source media="(prefers-color-scheme: light)" srcset="data_mart_model_white.png">
+>   <img alt="Star Schema Banvic" src="data_mart_model_white.png" width="800">
 > </picture>
 
 ---
