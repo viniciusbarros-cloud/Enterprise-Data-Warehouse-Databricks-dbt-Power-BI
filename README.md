@@ -25,9 +25,9 @@ O fluxo de dados foi desenhado utilizando a **Arquitetura Medalhão**, estrutura
 > **Visualização da Arquitetura:**
 > 
 > <picture>
->   <source media="(prefers-color-scheme: dark)" srcset="banvic_Medallion_Arquiteture_white.svg">
->   <source media="(prefers-color-scheme: light)" srcset="banvic_Medallion_Arquiteture_definitive_dark">
->   <img alt="Arquitetura Medalhão Banvic" src="img/banvic_Medallion_Arquiteture_dark.svg" width="800">
+>   <source media="(prefers-color-scheme: dark)" srcset="arquitetura_banvic_Medallion_Arquiteture_definitive.png">
+>   <source media="(prefers-color-scheme: light)" srcset="banvic_Medallion_Arquiteture_definitive_dark.png">
+>   <img alt="Arquitetura Medalhão Banvic" src="img/banvic_Medallion_Arquiteture_definitive.svg" width="800">
 > </picture>
 
 ---
